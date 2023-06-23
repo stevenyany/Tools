@@ -4,5 +4,36 @@
 
 # Git
 
+- setting a name for identification
+
+git config --global user.name "[firstname lastname]"
+
+- setting an email address
+
+git config --global user.email "[email]"
+
+- initialize exisiting directory as Git repository
+
+git init
+
+- retriving an entire repository
+
+git clone [url]
+
+- Seeing modified directories
+
+git status
+
+- adding files
+
+git add [file]
+
+- commiting a modification
+
+git commit -m "[message]"
+
+- Transmit local branch commits to repository
+
+git push [alias] [branch] 
 
 # Make
