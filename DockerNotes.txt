@@ -33,7 +33,7 @@ docker run --name [name for container] -it [repository name]
 
 - Rerunning a container
 
-docker start -ia [container ID]
+docker start -ia [container ID/name]
 
 remove -ia to rerun without terminal
 
@@ -61,4 +61,4 @@ docker rm [container name]
 
 - Removing an image repository (all containers with image removed)
 
-docker image rm [image ID]
+docker image rm [image ID/name]
