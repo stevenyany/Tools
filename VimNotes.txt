@@ -1,0 +1,88 @@
+# Vim
+
+h - move left, j - move down, k - move up, l - move right
+
+start vim: type vim [filename] then enter
+
+exit vim: :q! to discard changes or :wq to save changes
+
+delete character at cursor: x
+
+insert or append text: i for before the cursor, A for after the line
+
+delete from cursor to the next word - dw, delete from cursor to end of word - de
+delete from cursor to end of line - d$, delete a whole line - dd
+
+repeat a motion - prepend it wth a number
+format for a change command - operator [number] motion
+
+move to start of the line - 0
+
+undo previous actions - u, undo all changes on a line - U
+undo the undo's - CTRL-R
+
+put back text that has just been deleted - p
+
+replace the character under the cursor - r
+
+change operator allows for change from the cursor to the motion - c [number] motion
+
+CTRL-G displays location in file and file status
+move to the end of file - G
+number G moves to that line number
+gg moves to the first line
+
+/ followed by a phrase searches FORWARD for the phrase
+? followed by a phrase searches BACKWARD for the phrase
+after searching, n to find next occurrence in the same direction or N to search in opposite direction
+CTRL-O takes back to older positions, CTRL-I to newer positions
+
+% while the cursor is on a parethesis, bracket, or brace goes to its match
+
+substitute new for the first old in a line - :s/old/new
+substitute new for all old's on a line - :s/old/new/g
+substitute phrases between two line #'s - :#,#s/old/new/g
+substitue all occurrences in the file - :%s/old/new/g
+ask for confirmation each time - :%s/old/new/gc
+
+:!command excutes an external command
+
+:w FILENAME write the current vim file to disk with name FILENAME
+
+v motion :w FILENAME saves visually selected lines in file FILENAME
+
+:r FILENAME retrieves disk file FILENAME and puts it below the cursor
+
+:r !command reads the output of command and puts it below the cursor
+
+o opens a line BELOW curose and start Insert mode
+O opens a line above cursor and start Insert mode
+
+a inserts text AFTER the cursor
+A inserts text after the end of the line
+
+e moves to the end of a word
+
+y yanks (copies) text, p puts (pastes) it
+
+R enters replace mode until <ESC> is pressed
+
+:set xxx sets the option xxx
+ic - ignorecase - ignores upper/lower case when searching
+is - incsearch - shows partial matches for a search phrase
+hls - hlsearch - highlight all matching phrases
+
+prepend "no" to switch off an option
+
+:help or <F1> or <HELP> opens a help window
+
+:help cmd finds help on cmd
+
+CTRL-W CTRL-W jumps to another window
+
+:q closes help window
+
+create a vimrc startup script to keep preferred settings
+
+when typing a : command, press CTRL-D to see possible completions
+press <TAB> to use one completion

@@ -1,5 +1,3 @@
-# VI
-
 # Make
 
 explicit rules, implicit rules, variable definitions, directives, comment
